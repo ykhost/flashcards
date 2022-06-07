@@ -2,7 +2,7 @@ import { DecksRepositoryLocal } from "../../repositories/implementations/DecksRe
 import { CreateDeckController } from "./CreateDeckController";
 import { CreateDeckUseCase } from "./CreateDeckUseCase";
 
-const decksRepositoryLocal = DecksRepositoryLocal.getInstace();
+const decksRepositoryLocal = DecksRepositoryLocal.getInstance();
 
 const createDeckUseCase = new CreateDeckUseCase(decksRepositoryLocal);
 

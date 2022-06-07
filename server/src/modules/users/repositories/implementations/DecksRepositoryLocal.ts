@@ -11,7 +11,7 @@ class DecksRepositoryLocal implements IDeckRepository {
     this.decks = [];
   }
 
-  public static getInstace(): DecksRepositoryLocal {
+  public static getInstance(): DecksRepositoryLocal {
     if (!DecksRepositoryLocal.INSTANCE) {
       DecksRepositoryLocal.INSTANCE = new DecksRepositoryLocal();
     }

@@ -2,7 +2,7 @@ import { UsersRepositoryLocal } from "../../repositories/implementations/UsersRe
 import { CreateUserController } from "./CreateUserController";
 import { CreateUserUseCase } from "./CreateUserUseCase";
 
-const usersRepositoryLocal = UsersRepositoryLocal.getInstace();
+const usersRepositoryLocal = UsersRepositoryLocal.getInstance();
 
 const createUserUseCase = new CreateUserUseCase(usersRepositoryLocal);
 

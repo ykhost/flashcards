@@ -11,7 +11,7 @@ class UsersRepositoryLocal implements IUsersRepository {
     this.users = [];
   }
 
-  public static getInstace(): UsersRepositoryLocal {
+  public static getInstance(): UsersRepositoryLocal {
     if (!UsersRepositoryLocal.INSTANCE) {
       UsersRepositoryLocal.INSTANCE = new UsersRepositoryLocal();
     }
